@@ -5,7 +5,6 @@ public class Main {
         Reader leer = new Reader();
         leer.read();
 
-
         System.out.println("Josue muy bueno");
     }
 }
