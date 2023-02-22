@@ -8,7 +8,8 @@ public class Controlador {
     String Datos = "";
     String[] spliting;
     public void Calculadora(){
-        Calculator calc = new Calculator();
+        Calculator calc;
+        calc = Calculator.getInstance();
 
         Reader red = new Reader();
         Datos = red.read();

@@ -7,6 +7,20 @@ public class Calculator implements IPostFixCalculator{
     int Resultados = 0;
     String Datos = "";
     String[] spliting;
+    private static boolean flag = false;
+    private static Calculator CalcUnique;
+
+    private Calculator(){
+        flag = true;
+    }
+    public static Calculator getInstance(){
+        if(flag){
+            return CalcUnique;
+        } else {
+            CalcUnique = new Calculator();
+            return CalcUnique;
+        }
+    }
 
     /**
      * @param operandos
